@@ -1,0 +1,25 @@
+{
+  "name": "image-carousel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhenning83/image-carousel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhenning83/image-carousel/issues"
+  },
+  "homepage": "https://github.com/bhenning83/image-carousel#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
+  }
+}
