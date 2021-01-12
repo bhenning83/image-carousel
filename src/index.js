@@ -20,7 +20,38 @@ const frame =    document.createElement("div");
 const carousel = document.createElement("div");
 const right =    document.createElement('div');
 const left =     document.createElement('div');
+const frameBox = document.createElement('div');
+frameBox.classList.add('frame-box')
 const offsets = ['o1', 'o2', 'o3', 'o4', 'o5'];
+
+const dotBox =   document.createElement('div');
+const dot1 =     document.createElement('div');
+const dot2 =     document.createElement('div');
+const dot3 =     document.createElement('div');
+const dot4 =     document.createElement('div');
+const dot5 =     document.createElement('div');
+const dots = [dot1, dot2, dot3, dot4, dot5];
+dotBox.classList.add('dotBox');
+dot1.classList.add('dot');
+dot2.classList.add('dot');
+dot3.classList.add('dot');
+dot4.classList.add('dot');
+dot5.classList.add('dot');
+dot1.classList.add('active');
+
+for (let i = 0; i < 5; i++) {
+  dots[i].addEventListener('click', () => {
+    carousel.classList.remove(offsets[offset]);
+    carousel.classList.add(offsets[i]);
+    const current = document.getElementsByClassName('active');
+    current[0].classList.remove('active');
+    dots[i].classList.add('active');
+    offset = i;
+    clearInterval(rotate);
+    rotate = setInterval(slideRight, 5000);
+  })
+}
+
 let rotate;
 let offset = 0;
 
@@ -50,11 +81,14 @@ left.textContent = '<';
 
 const slideRight = () => {
   carousel.classList.remove(offsets[offset]);
+  const current = document.getElementsByClassName('active');
+  current[0].classList.remove('active');
   offset += 1;
   if (offset > 4) {
     offset = offset % 5;
   }
   carousel.classList.add(offsets[offset]);
+  dots[offset].classList.add('active');
 }
 
 const slideLeft = () => {
@@ -69,7 +103,7 @@ const slideLeft = () => {
 right.addEventListener('click', () => {
   slideRight();
   clearInterval(rotate);
-  rotate = setInterval(slideRight, 1000);
+  rotate = setInterval(slideRight, 5000);
 });
 
 left.addEventListener('click', () => {
@@ -79,17 +113,23 @@ left.addEventListener('click', () => {
 });
 
 const start = () => {
-  rotate = setInterval(slideRight, 3000);
+  rotate = setInterval(slideRight, 5000);
 }
 
-content.appendChild(left);
+frameBox.appendChild(left);
 carousel.appendChild(slide1);
 carousel.appendChild(slide2);
 carousel.appendChild(slide3);
 carousel.appendChild(slide4);
 carousel.appendChild(slide5);
 frame.appendChild(carousel);
-content.appendChild(frame);
-content.appendChild(right);
-
+frameBox.appendChild(frame);
+frameBox.appendChild(right);
+content.appendChild(frameBox)
+dotBox.appendChild(dot1);
+dotBox.appendChild(dot2);
+dotBox.appendChild(dot3);
+dotBox.appendChild(dot4);
+dotBox.appendChild(dot5);
+content.appendChild(dotBox);
 start();
