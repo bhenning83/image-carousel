@@ -99,6 +99,9 @@ img {
 }
 .dotBox {
   display: flex;
+  width: 100px;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 .dot {
   height: 10px;
