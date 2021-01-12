@@ -20,13 +20,63 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/images/bb.jpg":
+/*!**********************************!*\
+  !*** ./src/assets/images/bb.jpg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"ec039c636ceb8b413273d5e892b98efb.jpg\");\n\n//# sourceURL=webpack://image-carousel/./src/assets/images/bb.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/fg.jpg":
+/*!**********************************!*\
+  !*** ./src/assets/images/fg.jpg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"c322c1b7de0c95d310c7c5c678640ba8.jpg\");\n\n//# sourceURL=webpack://image-carousel/./src/assets/images/fg.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/pr.jpg":
+/*!**********************************!*\
+  !*** ./src/assets/images/pr.jpg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"735321660a8b19132bbfdc0c5e5d448e.jpg\");\n\n//# sourceURL=webpack://image-carousel/./src/assets/images/pr.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/vp.jpg":
+/*!**********************************!*\
+  !*** ./src/assets/images/vp.jpg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"26658503f7b4ad972ecee17ce424230d.jpg\");\n\n//# sourceURL=webpack://image-carousel/./src/assets/images/vp.jpg?");
+
+/***/ }),
+
+/***/ "./src/styles.css":
+/*!************************!*\
+  !*** ./src/styles.css ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://image-carousel/./src/styles.css?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_images_as1_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/images/as1.jpeg */ \"./src/assets/images/as1.jpeg\");\n\nconst content = document.getElementById(\"content\");\nconst imgBox = document.createElement(\"img\");\n\nconst h1 = document.createElement(\"div\");\nh1.textContent = \"Hello World\";\n\nimgBox.src = _assets_images_as1_jpeg__WEBPACK_IMPORTED_MODULE_0__.default\n\ncontent.appendChild(h1);\ncontent.appendChild(imgBox)\n\n//# sourceURL=webpack://image-carousel/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_images_as1_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/images/as1.jpeg */ \"./src/assets/images/as1.jpeg\");\n/* harmony import */ var _assets_images_bb_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/bb.jpg */ \"./src/assets/images/bb.jpg\");\n/* harmony import */ var _assets_images_vp_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/vp.jpg */ \"./src/assets/images/vp.jpg\");\n/* harmony import */ var _assets_images_pr_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/pr.jpg */ \"./src/assets/images/pr.jpg\");\n/* harmony import */ var _assets_images_fg_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/fg.jpg */ \"./src/assets/images/fg.jpg\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\n\n\n\n\n\n\nconst content =  document.getElementById(\"content\")\nconst pic1 =     document.createElement(\"img\");\nconst pic2 =     document.createElement(\"img\");\nconst pic3 =     document.createElement(\"img\");\nconst pic4 =     document.createElement(\"img\");\nconst pic5 =     document.createElement(\"img\");\nconst slide1 =   document.createElement(\"div\");\nconst slide2 =   document.createElement(\"div\");\nconst slide3 =   document.createElement(\"div\");\nconst slide4 =   document.createElement(\"div\");\nconst slide5 =   document.createElement(\"div\");\nconst frame =    document.createElement(\"div\");\nconst carousel = document.createElement(\"div\");\nconst right =    document.createElement('div');\nconst left =     document.createElement('div');\nconst offsets = ['o1', 'o2', 'o3', 'o4', 'o5'];\nlet offset = 0;\n\npic1.src = _assets_images_as1_jpeg__WEBPACK_IMPORTED_MODULE_0__.default;\npic2.src = _assets_images_bb_jpg__WEBPACK_IMPORTED_MODULE_1__.default;\npic3.src = _assets_images_vp_jpg__WEBPACK_IMPORTED_MODULE_2__.default;\npic4.src = _assets_images_pr_jpg__WEBPACK_IMPORTED_MODULE_3__.default;\npic5.src = _assets_images_fg_jpg__WEBPACK_IMPORTED_MODULE_4__.default;\n\nslide1.appendChild(pic1);\nslide1.classList.add(\"slide\")\nslide2.appendChild(pic2);\nslide2.classList.add(\"slide\")\nslide3.appendChild(pic3);\nslide3.classList.add(\"slide\")\nslide4.appendChild(pic4);\nslide4.classList.add(\"slide\")\nslide5.appendChild(pic5);\nslide5.classList.add(\"slide\")\n\nframe.setAttribute('id', 'frame');\n\ncarousel.setAttribute('id', 'carousel');\nright.textContent = '>';\nleft.textContent = '<';\n\n\nconst slideRight = () => {\n  carousel.classList.remove(offsets[offset]);\n  offset += 1;\n  if (offset > 4) {\n    offset = offset % 5;\n  }\n  carousel.classList.add(offsets[offset]);\n}\n\nconst slideLeft = () => {\n  carousel.classList.remove(offsets[offset]);\n  offset -= 1;\n  if (offset < 0) {\n    offset = 4;\n  }\n  carousel.classList.add(offsets[offset]);\n}\n\n// let rotate = setInterval(slideRight, 3000);\n\nright.addEventListener('click', slideRight);\n\nleft.addEventListener('click', slideLeft);\n\ncontent.appendChild(left);\ncarousel.appendChild(slide1);\ncarousel.appendChild(slide2);\ncarousel.appendChild(slide3);\ncarousel.appendChild(slide4);\ncarousel.appendChild(slide5);\nframe.appendChild(carousel);\ncontent.appendChild(frame);\ncontent.appendChild(right);\n\n\n//# sourceURL=webpack://image-carousel/./src/index.js?");
 
 /***/ })
 
