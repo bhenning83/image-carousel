@@ -21,6 +21,7 @@ const carousel = document.createElement("div");
 const right =    document.createElement('div');
 const left =     document.createElement('div');
 const offsets = ['o1', 'o2', 'o3', 'o4', 'o5'];
+let rotate;
 let offset = 0;
 
 pic1.src = img1;
@@ -65,11 +66,21 @@ const slideLeft = () => {
   carousel.classList.add(offsets[offset]);
 }
 
-// let rotate = setInterval(slideRight, 3000);
+right.addEventListener('click', () => {
+  slideRight();
+  clearInterval(rotate);
+  rotate = setInterval(slideRight, 1000);
+});
 
-right.addEventListener('click', slideRight);
+left.addEventListener('click', () => {
+  slideLeft();
+  clearInterval(rotate);
+  rotate = setInterval(slideRight, 5000);
+});
 
-left.addEventListener('click', slideLeft);
+const start = () => {
+  rotate = setInterval(slideRight, 3000);
+}
 
 content.appendChild(left);
 carousel.appendChild(slide1);
@@ -80,3 +91,5 @@ carousel.appendChild(slide5);
 frame.appendChild(carousel);
 content.appendChild(frame);
 content.appendChild(right);
+
+start();
